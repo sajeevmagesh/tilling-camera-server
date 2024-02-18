@@ -1,12 +1,19 @@
 from flask import Flask, request, jsonify
 import random
-
+from PIL import Image
 from keras.preprocessing import image
 import numpy as np
 import tensorflow as tf
 import io
 
-loaded_model = tf.keras.models.load_model('WorkingModel3_tf')
+import logging
+
+try:
+    loaded_model = tf.keras.models.load_model('WorkingModel3_tf')
+except Exception as e:
+    logging.exception("Failed to load the TensorFlow model")
+    raise  # Optionally re-raise the exception to halt the application
+
 
 
 app = Flask(__name__)
