@@ -5,3 +5,4 @@ numpy==1.23.5
 tensorflow==2.13.0
 Werkzeug==2.2.3
 pillow==10.2.0
+boto3==1.34.44
