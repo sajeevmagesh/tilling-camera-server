@@ -9,7 +9,7 @@ import io
 import logging
 
 try:
-    loaded_model = tf.keras.models.load_model('WorkingModel3_tf')
+    loaded_model = tf.keras.models.load_model('TillingModel.h5')
 except Exception as e:
     logging.exception("Failed to load the TensorFlow model")
     raise  # Optionally re-raise the exception to halt the application
