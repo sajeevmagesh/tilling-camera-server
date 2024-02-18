@@ -4,5 +4,5 @@ Flask-RESTful==0.3.10
 keras==2.13.1
 numpy==1.23.5
 tensorflow==2.13.0
-Gunicorn==20.1.0
-Werkzeug==2.2.2
+gunicorn==20.1.0
+werkzeug==2.2.2
