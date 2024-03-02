@@ -59,5 +59,5 @@ def upload_file():
     # Assuming here that the file is valid and you've done whatever processing you need
     return jsonify({'message': 'Image successfully uploaded', 'predictedTillage': int(p)})
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
